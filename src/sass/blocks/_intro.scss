@@ -1,0 +1,168 @@
+//-------------------------
+//----------- INTRO VIEW
+//-------------------------
+
+.intro {
+	position: relative;
+	z-index: 0;
+	&__mainView {
+		position: relative;
+		top: -2px;
+		width: 100%;
+		@include breakpoint(tablet) {
+			top: 0;
+		}
+	}
+	.slider-wrapper {
+		position: absolute;
+		top: 15rem;
+		left: 10rem;
+		width: 60%;
+	}
+	&__title {
+	    margin-bottom: 3.5rem;
+		font-size: 7.2rem;
+		font-weight: 600;
+		line-height: 1.1;
+		letter-spacing: -0.02rem;
+		color: $c-white;
+		@include breakpoint(mobile) {
+			font-size: 4rem;
+		}
+	}
+	&__subtitle {
+		position: relative;
+		margin-left: 3rem;
+		font-size: 1.4rem;
+		color: $c-yellow;
+		line-height: 1;
+		text-transform: uppercase;
+		@include breakpoint(mobile) {
+			font-size: 1.6rem;
+		}
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0.6rem;
+			left: -3rem;
+			width: 2rem;
+			height: 0.1rem;
+			background-color: $c-yellow;
+		}
+	}
+	&__data {
+		position: relative;
+		margin-right: 1.5rem;
+		font-size: 1.6rem;
+		font-weight: 500;
+		color: $c-yellow;
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			right: -0.75rem;
+			top: 0.2rem;
+			height: 1.6rem;
+			width: 0.1rem;
+			background-color: $c-yellow;
+		}
+	}
+	&__slider {
+		p {
+			margin: 2rem 0 3.5rem;
+			font-size: 1.6rem;
+			line-height: 1.8;
+			color: $c-white;
+		}
+	}
+	&__reaction {
+		margin-bottom: 3rem;
+		span {
+			position: relative;
+			margin-right: 4rem;
+			font-size: 1.6rem;
+			line-height: 1.8;
+			color: $c-white;
+			&:after {
+				content: "";
+				display: block;
+				position: absolute;
+				right: -1.8rem;
+				top: 0.2rem;
+				height: 1.6rem;
+				width: 0.1rem;
+				background-color: $c-white;
+			}
+		}
+		svg {
+			margin-right: 1rem;
+			fill: $c-white;
+			width: 2.5rem;
+			height: 2.5rem;
+			vertical-align: top;
+		}
+	}
+	&__decoration {
+		position: absolute;
+		top: 10rem;
+		right: -15rem;
+		@include breakpoint(tablet) {
+			width: 50%;
+		}
+	}
+	&__cta {
+		a {
+			position: relative;
+			display: inline-block;
+			height: 5rem;
+			width: 19rem;
+			margin-right: 3rem;
+			font-size: 1.4rem;
+			font-weight: 700;
+			background-color: $c-yellow;
+			border-radius: 3rem;
+			text-transform: uppercase;
+			&:last-child {
+				background-color: $c-white;
+				color: #eb8b50;
+			}
+			span {
+				@include absolute(center);
+			}
+		}
+	}
+	.slick-dots {
+		position: absolute;
+		right: -35rem;
+	}
+	.slick-dots li button {
+		position: relative;
+		font-size: 0;
+	    line-height: 0;
+	    display: block;
+	    width: 2rem;
+	    height: 2rem;
+	    margin-right: 1.5rem;
+	    cursor: pointer;
+	    color: transparent;
+	    border: 0;
+	    outline: none;
+	    background: transparent;
+	    &:before {
+			content: "";
+			display: block;
+			@include absolute(center);
+			width: 1.5rem;
+			height: 1.5rem;
+			border-radius: 1.5rem;
+			background-color: white;
+	    }
+	}
+	.slick-dots {
+		li.slick-active button:before {
+			background-color: $c-yellow;
+		} 
+	}
+	
+}
