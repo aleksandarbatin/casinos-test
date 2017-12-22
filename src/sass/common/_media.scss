@@ -5,55 +5,52 @@
 .media {
 	position: relative;
 	float: left;
-	width: 50%;
-	height: 36rem;
+	width: 30.6%;
+	margin: 2.5rem 1.5rem;
+	height: 21.5rem;
 	cursor: pointer;
-	@include transition(opacity 0.3s ease);
-	&--small {
-		width: 25%;
-	}
+	border-radius: 1rem;
+	overflow: hidden;
 	&__title {
-		margin-bottom: 1.8rem;
-		font-size: 2rem;
-		font-weight: 600;
-		color: $c-red;
-		text-transform: uppercase;
-		@include breakpoint(tablet--landscape) {
-			font-size: 2.2rem;
-		}
+		display: inline-block;
+		margin-left: 1rem;
+		font-size: 4.8rem;
+		color: $c-darkBlue;
 	}
-	&__date {
-		display: block;
-		margin-bottom: 1.8rem;
-		font-size: 1.4rem;
-		font-weight: 600;
-		color: $c-grey;
-		text-transform: uppercase;
-	}
-	p {
-		padding-right: 2rem;
-		font-size: 1.4rem;
-		line-height: 1.4;
-		font-weight: 400;
-		letter-spacing: 0.1rem;
-		@include breakpoint(tablet--landscape) {
-			font-size: 1.8rem;
-		}
-	}
-	&:hover {
-		@include breakpoint(exeptGadgets) {
-			.content-wrapper {
-				opacity: 0.65;
-				@include transition(opacity 0.3s ease);
-			}
-		}
-	}
-	a {
+	&__img {
 		position: relative;
-		width: 100%;
+		float: left;
+		width: 50%;
 		height: 100%;
-		display: block;
-		color: $c-black;
-		z-index: 555;
+		@include linearGradient(#fda085, #fcc419);
+		img {
+			@include absolute(center);
+		}
+	}
+	&__content {
+		float: left;
+		width: 50%;
+		height: 100%;
+		padding: 3rem;
+		background-color: $c-white;
+	}
+	.data {
+		margin-bottom: 2rem;
+		span {
+			display: block;
+		}
+		.up {
+			margin-bottom: 0.5rem;
+			font-size: 1.2rem;
+			font-weight: 500;
+			color: $c-grey;
+			text-transform: uppercase; 
+		}
+		.down {
+			font-size: 1.6rem;
+		}
+	}
+	.btn-more {
+		float: right;
 	}
 }
