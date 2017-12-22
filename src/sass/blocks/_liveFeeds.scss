@@ -1,0 +1,56 @@
+//-------------------------
+//----------- LIVE FEEDS
+//-------------------------
+
+.liveFeeds {
+	background-color: $c-background;
+	&__title {
+		margin-bottom: 4rem;
+		font-size: 4rem;
+		color: $c-darkBlue;
+		text-align: center;
+	}
+	&__subtitle {
+		font-size: 1.6rem;
+		color: $c-grey;
+		text-align: center;
+	}
+}
+
+.mediaLive {
+	width: 100%;
+	height: 10rem;
+	margin-bottom: 3rem;
+	border-radius: 1rem;
+	overflow: hidden;
+	&__img {
+		position: relative;
+		float: left;
+		width: 10%;
+		height: 100%;
+		@include linearGradient(#fda085, #fcc419);
+		img {
+			@include absolute(center);
+			width: 60%;
+		}
+	}
+	&__content {
+		float: left;
+		width: 90%;
+		height: 100%;
+		padding: 2rem;
+		background-color: $c-white;
+		p {
+			float: left;
+			width: 80%;
+			font-size: 1.6rem;
+			color: $c-darkBlue;
+		}
+		.user {
+			float: left;
+		}
+		.content-items {
+			float: left;
+		}
+	}
+}

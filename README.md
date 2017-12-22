@@ -5,7 +5,7 @@
 To try how it works you need to have NODE.js and GULP installed on your machine and simply do 
 
 ```
-https://github.com/aleksandarbatin/loop-demo.git
+https://github.com/aleksandarbatin/casinos-test.git
 cd loop-demo
 npm install
 ```

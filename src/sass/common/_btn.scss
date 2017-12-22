@@ -1,0 +1,15 @@
+//---------------------------
+//------------  BUTTON
+//---------------------------
+
+.btn {
+	position: relative;
+	height: 5rem;
+	width: 19rem;
+	font-size: 1.4rem;
+	border-radius: 3rem;
+	text-transform: uppercase;
+	span {
+		@include absolute(center);
+	}
+}

@@ -11,12 +11,6 @@
 	cursor: pointer;
 	border-radius: 1rem;
 	overflow: hidden;
-	&__title {
-		display: inline-block;
-		margin-left: 1rem;
-		font-size: 4.8rem;
-		color: $c-darkBlue;
-	}
 	&__img {
 		position: relative;
 		float: left;
@@ -50,7 +44,10 @@
 			font-size: 1.6rem;
 		}
 	}
-	.btn-more {
-		float: right;
+}
+
+.mediaWall.withRed {
+	.media .media__img {
+		@include linearGradient(#ff9a44, #fc6076);
 	}
 }

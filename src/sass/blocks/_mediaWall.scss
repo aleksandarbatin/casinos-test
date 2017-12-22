@@ -3,7 +3,22 @@
 //-------------------------
 
 .mediaWall {
-	padding: 2rem;
+	padding: 8rem 2rem 2rem;
 	overflow: hidden; 
 	background-color: $c-background;
+	&__top {
+		margin: 2rem 0;
+	}
+	&__title {
+		display: inline-block;
+		margin-left: 1rem;
+		font-size: 4.8rem;
+		color: $c-darkBlue;
+	}
+	.btn-more {
+		float: right;
+		color: $c-orange;
+		border: 0.2rem solid $c-orange;
+		background-color: $c-white;
+	}
 }
