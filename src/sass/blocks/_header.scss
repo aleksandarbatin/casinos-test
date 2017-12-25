@@ -9,6 +9,7 @@
 	&__nav {
 		display: inline-block;
 		padding: 0 9rem 0 4rem;
+		vertical-align: top;
 		@include breakpoint(tablet) {
 			display: none;
 			position: absolute;
@@ -20,9 +21,10 @@
 			background-color: $c-black;
 		}
 		li {
-			padding: 3.3rem 3.3rem 3.3rem 1rem;
+			padding: 3.4rem 3.1rem 3rem 1rem;
 			font-size: 1.6rem;
 			letter-spacing: -0.6px;
+			cursor: pointer;
 			@include breakpoint(tablet--landscape) {
 				font-size: 2rem;
 			}
@@ -38,6 +40,46 @@
 			&:last-child {
 				padding-right: 0;
 			}
+		}
+		.nav-dropdown {
+			position: relative;
+			&:hover {
+				.header__nav__submenu {
+					display: block;
+				}
+				.header__nav__submenu:before {
+					height: 0.5rem;
+				}
+			}
+		}
+		&__submenu {
+			display: none;
+			position: absolute;
+			left: 0;
+			top: 8rem;
+			width: 35.6rem;
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+			padding-left: 2rem;
+			background-color: rgba(255,255,255,0.7);
+			z-index: 555;
+			&:before {
+				display: block;
+				content: "";
+				position: absolute;
+				top: -0.5rem;
+				left: 0;
+				width: 10rem;
+				height: 0rem;
+				background-color: $c-yellow;
+			}	
+			li {
+				display: block;
+				padding: 1.25rem 0;
+				font-size: 1.6rem;
+				color: #332f2f;
+			}
+
 		}
 	}
 	&__logo {
