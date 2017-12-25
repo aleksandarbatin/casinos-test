@@ -6,7 +6,7 @@ To try how it works you need to have NODE.js and GULP installed on your machine 
 
 ```
 https://github.com/aleksandarbatin/casinos-test.git
-cd loop-demo
+cd casinos-test
 npm install
 ```
 All files used for building project are in /src folder. You can see there that I'm using SASS for preprocesing CSS. Inside SASS folder see readme file for explanation of logic that I used for css naming convention and files structure.
