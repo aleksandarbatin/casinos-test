@@ -23,29 +23,5 @@
         autoplay: true,
         autoplaySpeed: 4000
     })
-    
-    // #####################
-    // TEASERS SLIDER
-
-    var $teasersSlider = $('.teasers__slider__wrapper');
-
-    $teasersSlider.slick({
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        prevArrow: $('.teasersBtn-prev'),
-        nextArrow: $('.teasersBtn-next'),
-        responsive: [
-        {
-          breakpoint: 640,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true
-          }
-        }
-        ]
-    });
-
-
 
 })();
