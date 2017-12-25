@@ -26,11 +26,7 @@
 @import 'config/helpers';
 
 //------LAYOUTS
-@import 'layouts/pageWrapper';
-
-//------COMMON
-@import 'common/media';
-@import 'common/btn';
+@import 'layouts/pageWrapper';	
 
  //------BLOCKS
 @import 'blocks/header';
@@ -38,6 +34,11 @@
 @import 'blocks/footer';
 @import 'blocks/mediaWall';
 @import 'blocks/liveFeeds';
+
+//-----COMPONENTS
+@import 'components/btn';
+@import 'components/media';
+@import 'components/scroll-btn';
 
 // //------SLIDER±S
 
