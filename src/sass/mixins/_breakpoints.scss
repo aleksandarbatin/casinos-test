@@ -11,7 +11,7 @@
 
 
 @mixin breakpoint($point) {
-    @if $point == desktop--Large {//max-width = 1700px
+    @if $point == desktop--Large {//max-width = 1170px
         @media (min-width: $desktop)                       { @content; }
     }
     @if $point == desktop {//max-width = 1400px

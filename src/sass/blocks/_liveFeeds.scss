@@ -12,7 +12,7 @@
 		text-align: center;
 	}
 	&__subtitle {
-		margin-bottom: 4rem auto;
+		margin: 4rem auto;
 		width: 50%;
 		font-size: 1.6rem;
 		line-height: 1.5;
@@ -42,19 +42,33 @@
 		float: left;
 		width: 90%;
 		height: 100%;
-		padding: 2rem;
+		padding: 2.5rem;
 		background-color: $c-white;
 		p {
 			float: left;
-			width: 80%;
+			width: 70%;
+			padding-right: 1rem;
 			font-size: 1.6rem;
+			line-height: 1.5;
 			color: $c-darkBlue;
 		}
 		.user {
 			float: left;
+			width: 10%;
 		}
 		.content-items {
 			float: left;
+			width: 20%;
+			span {
+				display: block;
+				font-size: 1.6rem;
+				line-height: 1.5;
+				color: $c-darkBlue;
+			}
+			.date {
+				font-size: 1.3rem;
+				color: $c-grey;
+			}
 		}
 	}
 }

@@ -3,5 +3,61 @@
 //-------------------------
 
 .footer {
-	
+	padding: 0 2rem;
+	.top-footer {
+		position: relative;
+		padding: 3rem 1.5rem;
+		height: 2rem;
+		text-align: center;
+		box-sizing: content-box;
+		border-bottom: 1px solid #d7d9de;
+	}
+	&__social {
+		float: left;
+		svg {
+			width: 1.8rem;
+			height: 1.8rem;
+			margin-right: 3rem;
+			fill: #636363;
+		}
+	}
+	&__nav {
+		@include absolute(center);
+	}
+	&__nav li{
+		margin-left: 2.5rem;
+		font-size: 1.6rem;
+		color: $c-grey;
+	}
+	.lcb {
+		float: right;
+		position: relative;
+		span {
+			margin-right: 6rem;
+			font-size: 1.4rem;
+			color: $c-grey;
+		}
+		img {
+			position: absolute;
+			top: -1rem;
+			right: 2rem;
+			width: 3rem;
+		}
+	}
+	.bottom-footer {
+		position: relative;
+		clear: both;
+		padding: 2rem 1.5rem;
+		span {
+			font-size: 1.4rem;
+			line-height: 2rem;
+			color: $c-grey;
+		}
+		.rights {
+			@include absolute(center);
+		}
+		span:last-child {
+			float: right;
+		}
+	}
 }

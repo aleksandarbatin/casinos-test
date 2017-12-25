@@ -19,10 +19,10 @@ html {
     font-size  : $baseFontSize;
   //change this part
     @include breakpoint (desktop--Large) {
-        font-size: 10px; // > 1400
+        font-size: 10px; // > 1170px
     }
     @include breakpoint (desktop) {
-        font-size: 0.7142857142857143vw; //10px - 1400px
+        font-size: 0.854700854700855vw; //10px - 1170px
     }
     @include breakpoint (tablet) {
         font-size: 1.01010101010101vw;//10px - 768px

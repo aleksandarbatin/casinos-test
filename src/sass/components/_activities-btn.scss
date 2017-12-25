@@ -1,0 +1,16 @@
+//---------------------------
+//------------  ACTIVITIES BTN
+//---------------------------
+
+.activities-holder {
+	margin: 7rem 0;
+	text-align: center;
+}
+.activities-btn {
+	display: inline-block;
+	width: 23rem;
+	font-weight: 500;
+	color: $c-orange;
+	background-color: $c-white;
+	@include vendor-prefixes(box-shadow, 0px 0px 18px -4px rgba(0,0,0,0.75));
+}
