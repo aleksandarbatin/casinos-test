@@ -36,5 +36,5 @@ gulp
 ```
 Enjoy it!
 
-![casino](https://user-images.githubusercontent.com/17181108/35619380-2695bfc0-067e-11e8-87a8-e672e3b7803c.jpg)
+![casino](https://user-images.githubusercontent.com/17181108/35619537-a5f3d996-067e-11e8-9a13-b487b2369965.png)
 
